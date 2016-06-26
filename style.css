@@ -1773,7 +1773,7 @@ h2 {
 
 .link .tagline {
 	color: #666;
-	font-size: 12px;
+	font-size: 15px;
 	margin-top: 3px;
  }
 
@@ -2005,7 +2005,6 @@ body:not(.search-page) #search input[type=text] {
 	.users-online:before {display: none;}
 
 .flair, .linkflairlabel {
-	margin-right: 0.8em;
 	padding: 2px 4px;
  }
 
@@ -2272,9 +2271,20 @@ body.res .RESshortcutside:active,
 .flair-orangeflair[title]:before {background: #E16941;}
 .flair-blueflair[title]:before {background: RoyalBlue;}
 
+/* Disable flairs in main page */
+body:not(.comments-page) .flair {
+	display: none;
+}
 
+.flair {
+	background: url(%%flairspritesheet2%%) no-repeat -9999px;
+	border: 0;
+	padding: 0;
+	vertical-align: middle;
+	line-height: 32px;
+}
 
-
+/*FLAIRS DATA*/
 
 .titlebox form.toggle {background: none;}
 
