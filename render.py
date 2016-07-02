@@ -1,8 +1,6 @@
 #! /usr/bin/python
 
-data = {}
-
-flairs_style = ''
+banner = 'banner-lol'
 
 flairs = ['sinballoon', 'eunballoon', 'sourcelogo', 'sourcemusic', 'seasonofglass', 'flowerbud', 'snowflake']
 flair_custom_widths = {
@@ -11,6 +9,29 @@ flair_custom_widths = {
 flair_size = 40
 offset = 0
 
+colors = {
+# white
+    'color0': '#F5FFF5',
+# blue  #42acec
+    'color1': '#0099EE',
+    'color1hl': '#48B3EE',
+    'color1dk': '#0099EE',
+    'color1light': '#D9E7EE',
+# yellow
+    'color2': '#FFDD00',
+    'color2light': '#FFFADC',
+    'color2dk': '#C9AE00',
+# green
+    'color3': '#00DDBB',
+    'color3hl': '#3CDDC4',
+    'color3light': '#BDDDD8',
+    'color3dk': '#0CAD94',
+
+    'tabmenubg': 'rgba(12,173,148, 0.4)',
+    'tabmenubghl': 'rgba(12,173,148, 0.6)'
+}
+
+flairs_style = ''
 for flair in flairs:
     flairs_style += '.flair-%s {\n' % flair
     flairs_style += '    height: %dpx;\n' % flair_size
@@ -37,9 +58,11 @@ for flair in flairs:
 
     offset += flair_size
 
-data['flairs'] = flairs_style
-
 with open('style.css') as f:
     style = f.read()
 
-print(style.replace('/*FLAIRS DATA*/', flairs_style))
+style = style.replace('/*BANNER_NAME*/', '%%' + banner + '%%')
+style = style.replace('/*FLAIRS DATA*/', flairs_style)
+for color_name, color_value in colors.items():
+    style = style.replace('/*' + color_name.upper() + '*/', color_value)
+print(style)

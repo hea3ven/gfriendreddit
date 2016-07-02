@@ -41,10 +41,11 @@ span.pagename.redditname a {
     padding-left: 80px;
  }
  
-.tabmenu {margin-top: 22px;}
+.tabmenu {margin-top: 32px;}
  
     .tabmenu li {
-        background-color: transparent;
+        background-color: /*TABMENUBG*/;
+		background-color: transparent;
         margin: 0 !important;
         height: 36px;
         width: 102px;
@@ -59,31 +60,36 @@ a {
  
 .tabmenu li a {
     padding: 0px 20px!important;
-    background-color: transparent;
-    border-left: none;
-    border-right: none;
+	background-color: /*TABMENUBG*/;
+	border-width: 1px 1px 0px 1px;
+	border-style: solid;
+	border-color: /*COLOR3DK*/;
+    /* border-left: none; */
+    /* border-right: none; */
     display: inline-block;
-    line-height: 48px;
+    line-height: 33px;
     text-align: center;
     text-transform: Uppercase;
     transition: 150ms;
     -webkit-transition:150ms;
     font-weight: normal;
     color: #e5e5e5 !important;
-    text-shadow: 0px 1px 8px rgba(0, 0, 0, 0.5);
+    text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.7);
  }
  
 .tabmenu li:hover a {
-    background-color: rgba(255, 255, 255, 0.08);
+	background-color: /*TABMENUBGHL*/;
     color: #FFF !important;
     font-weight: bold !important;
  }
  
 .tabmenu li.selected a {
     color: #FFF !important;
-    background-color: rgba(255, 255, 255, 0.15);
+	background-color: /*TABMENUBGHL*/;
     font-weight: bold !important;
-    border: none !important;
+	border-width: 4px 1px 0px 1px;
+	border-style: solid;
+	border-color: /*COLOR3DK*/;
  }
  
 /*--- Tabs - Hide unimportant ones  ---*/
@@ -451,7 +457,7 @@ body {font-family: -apple-system, San Francisco Display, Helvetica Neue, Helveti
 
 /*ICONOGRAPHY*/
 
-#mail.nohavemail,#mail.havemail, #modmail.havemail,#modmail.nohavemail, .thumbnail.nsfw, .thumbnail.self, .thumbnail.default, .stickied .thumbnail.self, #header-bottom-right a.pref-lang, .res #header-bottom-right .gearIcon, .arrow.upmod, .arrow.downmod, .arrow.up, .arrow.down,.expando-button {background: url(%%spritesheet%%) !important; background-size: 50px 502px !important;}
+#mail.nohavemail,#mail.havemail, #modmail.havemail,#modmail.nohavemail, .thumbnail.nsfw, .thumbnail.self, .thumbnail.default, .stickied .thumbnail.self, #header-bottom-right a.pref-lang, .res #header-bottom-right .gearIcon, .arrow.upmod, .arrow.downmod, .arrow.up, .arrow.down,.expando-button {background: url(%%spritesheet2%%) !important; background-size: 50px 502px !important;}
 
 #mail.nohavemail {background-position: 0 0}
 #mail.havemail {background-position: 0 -58.66px !important;}
@@ -511,8 +517,8 @@ body.res #header-bottom-right #mail.havemail {top: -1px !important;}
 	transition:200ms;
 }
 
-.arrow.upmod {background-color: orangered !important; margin-bottom: 5px;}
-.arrow.downmod {background-color: #2B9BDB !important; margin-top: 5px;}
+/* .arrow.upmod {background-color: orangered !important; margin-bottom: 5px;} */
+/* .arrow.downmod {background-color: #2B9BDB !important; margin-top: 5px;} */
 
 /*EXPANDO BUTTONS*/
 .expando-button,
@@ -1229,8 +1235,6 @@ body:not(.submit-page) .tabmenu::after {
 
 	.sidecontentbox a.helplink:hover {text-decoration: none;}
 
-	.sidecontentbox a.helplink:active {background-color: #ae9df4}
-
 /*OP TAG*/
 
 div .thing .tagline .author.submitter:before,
@@ -1320,7 +1324,7 @@ a.author.moderator:after {content: "";}
  }
 
 body:not(.comments-page) div.content .entry {
-    border-bottom: 1px solid #e1e1e1;
+    /* border-bottom: 1px solid #e1e1e1; */
     padding: 13px;
 }
 
@@ -1347,7 +1351,7 @@ div.commentarea div.RES-keyNav-activeElement .md {
 }
 
 /*Body background*/
-body {background: #e6e6e8;}
+body {background: /*COLOR0*/;}
 
 /*Expando no outline*/
 .entry.RES-keyNav-activeElement div.md, .commentarea .entry.RES-keyNav-activeElement div.noncollapsed, .entry.RES-keyNav-activeElement .usertext-body, .new-comment .usertext-body .md {
@@ -1826,12 +1830,17 @@ body:not(.submit-page) .tabmenu::after {
 div.content {
 	border-radius: 4px;
 	margin: 15px 335px 10px 16px;
-	border: 1px solid #e1e1e1;
-	background-color: #fff;
+	/* border: 1px solid #e1e1e1; */
+	background-color: /*COLOR0*/;
 	font-size: 12px;
  }
 
 .midcol {margin-left: 0;}
+
+body >.content .link {
+	background-color: #fff;
+	margin-bottom: 7px;
+}
 
 body >.content .link .rank, .rank-spacer {display: none;}
 
@@ -2132,7 +2141,7 @@ div.leavemoderator {
 .RESshortcutside, 
 .RESDashboardToggle
 
-    {background: #80d04b;}
+    {background: /*COLOR3*/;}
 
 /*SIDEBAR BUTTONS HOVER*/
 
@@ -2140,7 +2149,7 @@ div.leavemoderator {
 body.res .RESshortcutside:hover,
 .RESDashboardToggle:hover
 
-    {background: #A6DE81;}
+    {background: /*COLOR3HL*/;}
 
 /*SIDEBAR BUTTONS ACTIVE*/
 
@@ -2148,7 +2157,7 @@ body.res .RESshortcutside:hover,
 body.res .RESshortcutside:active,
 .RESDashboardToggle:active
 
-    {background: #599134;}
+    {background: /*COLOR3*/;}
 
 
 /*BUTTONS ON SIDEBAR - Buttonstyle one */
@@ -2297,7 +2306,7 @@ body:not(.comments-page) .flair {
 
 /*NO PRESET DEFAULT FLAIR*/
 .linkflairlabel {
-    background: RoyalBlue;
+    background: /*COLOR3DK*/;
     color: #FFF;
     font-weight: bold;
     padding: 2px 10px;
@@ -2713,45 +2722,81 @@ color.
 
 		/*DEFAULT COLOR*/
 
-		.RESDashboardToggle.remove,.RESSubscriptionButton,.RESshortcutside.remove,.fancy-toggle-button .remove,.panestack-title a.title-button,.panestack-title a.title-button.gold,.side .titlebox .md h4 a,.sidecontentbox a.helplink,button,.commentarea .comment a.expand:hover
+		.RESDashboardToggle.remove,.RESSubscriptionButton,.RESshortcutside.remove,.panestack-title a.title-button,.panestack-title a.title-button.gold,.side .titlebox .md h4 a,button,.commentarea .comment a.expand:hover
 
-		{background:#42acec}
+		{background:/*COLOR1*/}
  
-		.commentarea span.score, .comment .flat-list li a:hover,.comment .flat-list li a[onclick*=reply],.commentNavSortType:hover,.commentarea .menuarea .toggle a:hover,.entry .buttons .may-blank,.error,.link .domain a:hover,.link .entry .buttons li a:hover,.loadFlat:hover,.submit-page .roundfield a,.thing .title,#progressIndicator a#NERStaticLink,.deepthread a,.deepthread::after,.linefield .title
+		.commentarea span.score, .comment .flat-list li a:hover,.comment .flat-list li a[onclick*=reply],.commentNavSortType:hover,.commentarea .menuarea .toggle a:hover,.error,.link .domain a:hover,.link .entry .buttons li a:hover,.loadFlat:hover,.submit-page .roundfield a,.thing .title,#progressIndicator a#NERStaticLink,.deepthread a,.deepthread::after,.linefield .title
 
-		{color:#42acec}
+		{color:/*COLOR1*/}
  
 
-		.roundfield input[type=url]:focus,.roundfield input[type=text]:focus,.roundfield textarea:focus,.usertext-edit textarea:focus,#img-name:focus,.roundfield input[type="url"]:focus,.flairlist .flair-jump input[type="text"]:focus, .RES-keyNav-activeElement, .RES-keyNav-activeElement .md-container
+		.roundfield input[type=url]:focus,.roundfield input[type=text]:focus,.roundfield textarea:focus,.usertext-edit textarea:focus,#img-name:focus,.roundfield input[type="url"]:focus,.flairlist .flair-jump input[type="text"]:focus
 
-		{border-color:#42acec}
+		{border-color:/*COLOR2*/}
 
 
 		/*HOVER - LIGHTER SHADE OF DEFAULT COLOR*/
 
-		.RESDashboardToggle.remove:hover,.comments-page .RESSubscriptionButton:hover,.fancy-toggle-button .remove:hover,.panestack-title a.title-button.gold:hover,.panestack-title a.title-button:hover,.side .titlebox .md h4 a:hover,.sidecontentbox a.helplink:hover,body.res .side .RESshortcutside.remove:hover,button:hover
+		.RESDashboardToggle.remove:hover,.comments-page .RESSubscriptionButton:hover,.panestack-title a.title-button.gold:hover,.panestack-title a.title-button:hover,.side .titlebox .md h4 a:hover,body.res .side .RESshortcutside.remove:hover,button:hover
 
-		{background:#42acec}
+		{background:/*COLOR1HL*/}
 
 		/*ACTIVE - DARKER SHADE OF DEFAULT COLOR*/
  
-		.RESDashboardToggle.remove:active,.RESshortcutside.remove:active,.comments-page .RESSubscriptionButton:active,.fancy-toggle-button .remove:active,.panestack-title a.title-button.gold:active,.panestack-title a.title-button:active,.side .titlebox .md h4 a:active,.sidecontentbox a.helplink:active,button:active
+		.RESDashboardToggle.remove:active,.RESshortcutside.remove:active,.comments-page .RESSubscriptionButton:active,.panestack-title a.title-button.gold:active,.panestack-title a.title-button:active,.side .titlebox .md h4 a:active,button:active
 
-		{background:#42acec}
+		{background:/*COLOR1*/}
 
 /*SET TWO - SECONDARY COLOR*/
 
 		/*DEFAULT*/
  
-		.thing .md table thead tr th,.morelink,.side .titlebox .md h3 a,.tabmenu,.wiki-page-content .md table thead tr th {background:#42acec}
+		.thing .md table thead tr th,.morelink,.side .titlebox .md h3 a,.tabmenu,.wiki-page-content .md table thead tr th,.fancy-toggle-button .remove,.sidecontentbox a.helplink
+	   	{background:/*COLOR3*/}
 
 		/*HOVER - LIGHTER SHADE OF DEFAULT COLOR*/
 
-		.morelink:hover,.side .titlebox .md h3 a:hover {background:#42acec}
+		.morelink:hover,.side .titlebox .md h3 a:hover,.fancy-toggle-button .remove:hover,.sidecontentbox a.helplink:hover
+	   	{background:/*COLOR3HL*/}
  
 		/*ACTIVE - DARKER SHADE OF DEFAULT COLOR*/
 
-		.morelink:active, .side .titlebox .md h3 a:active {background: #42acec;}
+		.morelink:active, .side .titlebox .md h3 a:active,.fancy-toggle-button .remove:active,.sidecontentbox a.helplink:active
+	   	{background: /*COLOR3*/;}
+
+/* SET THREE - ALTERNATING COLORS */
+div.even > div.RES-keyNav-activeElement, div.link > div.RES-keyNav-activeElement .md-container {
+	border-color: /*COLOR1*/ !important;
+	background-color: /*COLOR1LIGHT*/ !important;
+}
+
+div.odd > div.RES-keyNav-activeElement, div.link:nth-of-type(3n) >  div.RES-keyNav-activeElement .md-container {
+	border-color: /*COLOR2*/ !important;
+	background-color: /*COLOR2LIGHT*/ !important;
+}
+
+div.even {
+	border-top: 1px solid /*COLOR1*/;
+	border-right: 1px solid /*COLOR1*/;
+	border-bottom: 1px solid /*COLOR1*/;
+	border-left: 6px solid /*COLOR1*/;
+}
+
+div.odd {
+	border-top: 1px solid /*COLOR2*/;
+	border-right: 1px solid /*COLOR2*/;
+	border-bottom: 1px solid /*COLOR2*/;
+	border-left: 6px solid /*COLOR2*/;
+}
+
+div.even .buttons .may-blank {
+	color: /*COLOR1DK*/;
+}
+
+div.odd .buttons .may-blank {
+	color: /*COLOR2DK*/;
+}
 
 /*END CHANGE COLOR SCHEME*/
 
@@ -3179,7 +3224,7 @@ read message by Hakan Yalcin from the Noun Project
 /*HEADER*/
 
 #header { 
-   background : url(%%banner12%%);  background-size: cover} 
+   background : url(/*BANNER_NAME*/);  background-size: cover} 
 
 /*END HEADER*/
 
@@ -3199,7 +3244,7 @@ read message by Hakan Yalcin from the Noun Project
 /*SUBSCRIBERS TEXT*/
 .titlebox .word {display: none}
 
-.titlebox .number:after {content: " Readers";}
+.titlebox .number:after {content: " Buddies";}
 
 .titlebox .users-online span.number:after {content: " buddies here now";}
 /*END SUBSCRIBERS TEXT*/
