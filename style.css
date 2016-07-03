@@ -43,13 +43,11 @@ span.pagename.redditname a {
  
 .tabmenu {margin-top: 32px;}
  
-    .tabmenu li {
-        background-color: /*TABMENUBG*/;
-		background-color: transparent;
-        margin: 0 !important;
-        height: 36px;
-        width: 102px;
-     }
+.tabmenu li {
+	margin: 0 !important;
+	height: 36px;
+	width: 102px;
+ }
  
 .selected, .choice.primary {font-weight: 600;}
  
@@ -1839,7 +1837,7 @@ div.content {
 
 body >.content .link {
 	background-color: #fff;
-	margin-bottom: 7px;
+	margin-bottom: 3px;
 }
 
 body >.content .link .rank, .rank-spacer {display: none;}
@@ -3189,6 +3187,164 @@ html[lang="dm"] .RES-keyNav-activeElement .md-container {
 
 
 
+
+
+
+
+html[lang="gf"] #header { 
+   background : url(/*LOVE_BANNER_NAME*/);
+   background-size: cover;
+} 
+
+html[lang="gf"] .tabmenu li a {
+	background-color: /*LOVE_TABMENUBG*/;
+	border-color: /*LOVE_TABMENUBG*/;
+}
+html[lang="gf"] .tabmenu li:hover a,
+html[lang="gf"] .tabmenu li.selected a {
+	background-color: /*LOVE_TABMENUBGHL*/;
+}
+
+html[lang="gf"] body {background: /*LOVE_COLOR0*/;}
+html[lang="gf"] div.content {
+	border-radius: 4px;
+	margin: 15px 335px 10px 16px;
+	/* border: 1px solid #e1e1e1; */
+	background-color: /*LOVE_COLOR0*/;
+	font-size: 12px;
+ }
+
+html[lang="gf"] .RESDashboardToggle.remove,
+html[lang="gf"] .RESSubscriptionButton,
+html[lang="gf"] .RESshortcutside.remove,
+html[lang="gf"] .panestack-title a.title-button,
+html[lang="gf"] .panestack-title a.title-button.gold,
+html[lang="gf"] .side .titlebox .md h4 a,
+html[lang="gf"] button,
+html[lang="gf"] .commentarea .comment a.expand:hover
+
+{background:/*LOVE_COLOR1*/;}
+
+html[lang="gf"] .commentarea span.score,
+html[lang="gf"] .comment .flat-list li a:hover,
+html[lang="gf"] .comment .flat-list li a[onclick*=reply],
+html[lang="gf"] .commentNavSortType:hover,
+html[lang="gf"] .commentarea .menuarea .toggle a:hover,
+html[lang="gf"] .error,
+html[lang="gf"] .link .domain a:hover,
+html[lang="gf"] .loadFlat:hover,
+html[lang="gf"] .submit-page .roundfield a,
+html[lang="gf"] #progressIndicator a#NERStaticLink,
+html[lang="gf"] .deepthread a,
+html[lang="gf"] .deepthread::after,
+html[lang="gf"] .linefield .title
+
+{color:/*LOVE_COLOR1*/;}
+
+html[lang="gf"] .thing .title,
+html[lang="gf"] .link .entry .buttons li a,
+html[lang="gf"] .link .entry .buttons li a:hover
+{ color: /*LOVE_COLOR1DK*/; }
+
+html[lang="gf"] .linkflairlabel
+{ background-color: /*LOVE_COLOR1DK*/; }
+
+html[lang="gf"] .roundfield input[type=url]:focus,
+html[lang="gf"] .roundfield input[type=text]:focus,
+html[lang="gf"] .roundfield textarea:focus,
+html[lang="gf"] .usertext-edit textarea:focus,
+html[lang="gf"] #img-name:focus,
+html[lang="gf"] .roundfield input[type="url"]:focus,
+html[lang="gf"] .flairlist .flair-jump input[type="text"]:focus
+
+{border-color:/*LOVE_COLOR2*/}
+
+
+/*HOVER - LIGHTER SHADE OF DEFAULT COLOR*/
+
+html[lang="gf"] .RESDashboardToggle.remove:hover,
+html[lang="gf"] .comments-page .RESSubscriptionButton:hover,
+html[lang="gf"] .panestack-title a.title-button.gold:hover,
+html[lang="gf"] .panestack-title a.title-button:hover,
+html[lang="gf"] .side .titlebox .md h4 a:hover,
+html[lang="gf"] body.res .side .RESshortcutside.remove:hover,
+html[lang="gf"] button:hover
+
+{background:/*LOVE_COLOR1HL*/}
+
+/*ACTIVE - DARKER SHADE OF DEFAULT COLOR*/
+
+html[lang="gf"] .RESDashboardToggle.remove:active,
+html[lang="gf"] .RESshortcutside.remove:active,
+html[lang="gf"] .comments-page .RESSubscriptionButton:active,
+html[lang="gf"] .panestack-title a.title-button.gold:active,
+html[lang="gf"] .panestack-title a.title-button:active,
+html[lang="gf"] .side .titlebox .md h4 a:active,
+html[lang="gf"] button:active
+
+{background:/*LOVE_COLOR1*/}
+
+/*SET TWO - SECONDARY COLOR*/
+
+/*DEFAULT*/
+
+html[lang="gf"] .thing .md table thead tr th,
+html[lang="gf"] .morelink,
+html[lang="gf"] .side .titlebox .md h3 a,
+html[lang="gf"] .tabmenu,
+html[lang="gf"] .wiki-page-content .md table thead tr th,
+html[lang="gf"] .fancy-toggle-button .remove,
+html[lang="gf"] .sidecontentbox a.helplink
+{background:/*LOVE_COLOR3*/}
+
+/*HOVER - LIGHTER SHADE OF DEFAULT COLOR*/
+
+html[lang="gf"] .morelink:hover,
+html[lang="gf"] .side .titlebox .md h3 a:hover,
+html[lang="gf"] .fancy-toggle-button .remove:hover,
+html[lang="gf"] .sidecontentbox a.helplink:hover
+{background:/*LOVE_COLOR3HL*/}
+
+/*ACTIVE - DARKER SHADE OF DEFAULT COLOR*/
+
+html[lang="gf"] .morelink:active,
+html[lang="gf"] .side .titlebox .md h3 a:active,
+html[lang="gf"] .fancy-toggle-button .remove:active,
+html[lang="gf"] .sidecontentbox a.helplink:active
+{background: /*LOVE_COLOR3*/;}
+
+/* SET THREE - ALTERNATING COLORS */
+html[lang="gf"] div.even > div.RES-keyNav-activeElement, 
+html[lang="gf"] div.link > div.RES-keyNav-activeElement .md-container {
+border-color: /*LOVE_COLOR1*/ !important;
+background-color: /*LOVE_COLOR1LIGHT*/ !important;
+}
+
+html[lang="gf"] div.odd > div.RES-keyNav-activeElement,
+html[lang="gf"] div.link:nth-of-type(3n) >  div.RES-keyNav-activeElement .md-container {
+border-color: /*LOVE_COLOR2*/ !important;
+background-color: /*LOVE_COLOR2LIGHT*/ !important;
+}
+
+html[lang="gf"] div.even {
+border-top: 1px solid /*LOVE_COLOR1*/;
+border-right: 1px solid /*LOVE_COLOR1*/;
+border-bottom: 1px solid /*LOVE_COLOR1*/;
+border-left: 6px solid /*LOVE_COLOR1*/;
+}
+
+html[lang="gf"] div.odd {
+	border-top: 1px solid /*LOVE_COLOR2*/;
+	border-right: 1px solid /*LOVE_COLOR2*/;
+	border-bottom: 1px solid /*LOVE_COLOR2*/;
+	border-left: 6px solid /*LOVE_COLOR2*/;
+}
+
+
+
+
+
+
 /*
 
 Credits
@@ -3224,7 +3380,8 @@ read message by Hakan Yalcin from the Noun Project
 /*HEADER*/
 
 #header { 
-   background : url(/*BANNER_NAME*/);  background-size: cover} 
+   background : url(/*BANNER_NAME*/);  background-size: cover
+} 
 
 /*END HEADER*/
 
