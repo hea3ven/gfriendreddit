@@ -11,12 +11,13 @@ span.pagename.redditname a {
 	color: transparent;
 	display: block;
 	width: 100%; /*DO NOT CHANGE - TWEAK HEIGHT INSTEAD*/
-	background-image: url(%%sublogo2%%);
-        height: 110px;
+	background-image: url(%%sublogo%%);
+        height: 120px;
 	background-size: contain;
 	background-repeat: no-repeat;
 	position: absolute;
 	top: 50px;
+	margin-left: 10px;
  }
 
 /*HEADER STYLE B EXCLUSIVE CODE*/
@@ -38,7 +39,7 @@ span.pagename.redditname a {
     left: 0px;
     right: 0px;
     top: 156px;
-    padding-left: 80px;
+    padding-left: 200px;
  }
  
 .tabmenu {margin-top: 32px;}
@@ -102,14 +103,18 @@ a {
  
 #header-img {
     position: relative;
-    height: 30px !important;
+    height: 45px !important;
     width: 30px;
-    margin-top: 163px;
+    margin-top: 148px;
     margin-left: 35px;
-    background-size: contain !important;
     background-repeat: no-repeat !important;
     z-index: 1;
  }
+#header-img.default-header {
+	background-image: url(%%rddtlogo3%%);
+	background-position: 0px 0px;
+    background-size: contain !important;
+}
  
 /*END HEADER STYLE B EXCLUSIVE CODE*/
 /*CORE CODE*/
@@ -2037,7 +2042,9 @@ body:not(.search-page) #search input[type=text] {
 .score.unvoted {color: #666;}
 div.midcol.likes, div.midcol.dislikes, div.midcol.unvoted,div.reddit-entry {padding: 0px 10px;}
 
-#header-img.default-header:hover, #header-img:hover {opacity: .7;}
+#header-img.default-header:hover, #header-img:hover {
+	opacity: .7;
+}
 
 .users-online {margin-bottom: 2em;}
 
@@ -2284,7 +2291,7 @@ body:not(.comments-page) .flair {
 }
 
 .flair {
-	background: url(%%flairspritesheet2%%) no-repeat -9999px;
+	background: url(%%flairspritesheet3%%) no-repeat -9999px;
 	border: 0;
 	padding: 0;
 	vertical-align: middle;
