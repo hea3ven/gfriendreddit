@@ -11,13 +11,12 @@ span.pagename.redditname a {
 	color: transparent;
 	display: block;
 	width: 100%; /*DO NOT CHANGE - TWEAK HEIGHT INSTEAD*/
-	background-image: url(%%sublogo-laugh%%);
-        height: 120px;
+	background-image: url(%%sublogo2%%);
+        height: 110px;
 	background-size: contain;
 	background-repeat: no-repeat;
 	position: absolute;
 	top: 50px;
-	margin-left: 10px;
  }
 
 /*HEADER STYLE B EXCLUSIVE CODE*/
@@ -39,17 +38,17 @@ span.pagename.redditname a {
     left: 0px;
     right: 0px;
     top: 156px;
-    padding-left: 200px;
+    padding-left: 80px;
  }
  
-body:not(.comments-page) .tabmenu {margin-top: 32px;}
-.tabmenu {margin-top: 35px;}
+.tabmenu {margin-top: 22px;}
  
-.tabmenu li {
-	margin: 0 !important;
-	height: 36px;
-	width: 102px;
- }
+    .tabmenu li {
+        background-color: transparent;
+        margin: 0 !important;
+        height: 36px;
+        width: 102px;
+     }
  
 .selected, .choice.primary {font-weight: 600;}
  
@@ -60,36 +59,31 @@ a {
  
 .tabmenu li a {
     padding: 0px 20px!important;
-	background-color: /*TABMENUBG*/;
-	border-width: 1px 1px 0px 1px;
-	border-style: solid;
-	border-color: /*COLOR3DK*/;
-    /* border-left: none; */
-    /* border-right: none; */
+    background-color: transparent;
+    border-left: none;
+    border-right: none;
     display: inline-block;
-    line-height: 33px;
+    line-height: 48px;
     text-align: center;
     text-transform: Uppercase;
     transition: 150ms;
     -webkit-transition:150ms;
     font-weight: normal;
     color: #e5e5e5 !important;
-    text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.7);
+    text-shadow: 0px 1px 8px rgba(0, 0, 0, 0.5);
  }
  
 .tabmenu li:hover a {
-	background-color: /*TABMENUBGHL*/;
+    background-color: rgba(255, 255, 255, 0.08);
     color: #FFF !important;
     font-weight: bold !important;
  }
  
 .tabmenu li.selected a {
     color: #FFF !important;
-	background-color: /*TABMENUBGHL*/;
+    background-color: rgba(255, 255, 255, 0.15);
     font-weight: bold !important;
-	border-width: 4px 1px 0px 1px;
-	border-style: solid;
-	border-color: /*COLOR3DK*/;
+    border: none !important;
  }
  
 /*--- Tabs - Hide unimportant ones  ---*/
@@ -104,18 +98,14 @@ a {
  
 #header-img {
     position: relative;
-    height: 45px !important;
+    height: 30px !important;
     width: 30px;
-    margin-top: 148px;
+    margin-top: 163px;
     margin-left: 35px;
+    background-size: contain !important;
     background-repeat: no-repeat !important;
     z-index: 1;
  }
-#header-img.default-header {
-	background-image: url(%%rddtlogo-laugh%%);
-	background-position: 0px 0px;
-    background-size: contain !important;
-}
  
 /*END HEADER STYLE B EXCLUSIVE CODE*/
 /*CORE CODE*/
@@ -461,7 +451,7 @@ body {font-family: -apple-system, San Francisco Display, Helvetica Neue, Helveti
 
 /*ICONOGRAPHY*/
 
-#mail.nohavemail,#mail.havemail, #modmail.havemail,#modmail.nohavemail, .thumbnail.nsfw, .thumbnail.self, .thumbnail.default, .stickied .thumbnail.self, #header-bottom-right a.pref-lang, .res #header-bottom-right .gearIcon, .arrow.upmod, .arrow.downmod, .arrow.up, .arrow.down,.expando-button {background: url(%%spritesheet-lol%%) !important; background-size: 50px 502px !important;}
+#mail.nohavemail,#mail.havemail, #modmail.havemail,#modmail.nohavemail, .thumbnail.nsfw, .thumbnail.self, .thumbnail.default, .stickied .thumbnail.self, #header-bottom-right a.pref-lang, .res #header-bottom-right .gearIcon, .arrow.upmod, .arrow.downmod, .arrow.up, .arrow.down,.expando-button {background: url(%%spritesheet%%) !important; background-size: 50px 502px !important;}
 
 #mail.nohavemail {background-position: 0 0}
 #mail.havemail {background-position: 0 -58.66px !important;}
@@ -521,8 +511,8 @@ body.res #header-bottom-right #mail.havemail {top: -1px !important;}
 	transition:200ms;
 }
 
-/* .arrow.upmod {background-color: orangered !important; margin-bottom: 5px;} */
-/* .arrow.downmod {background-color: #2B9BDB !important; margin-top: 5px;} */
+.arrow.upmod {background-color: orangered !important; margin-bottom: 5px;}
+.arrow.downmod {background-color: #2B9BDB !important; margin-top: 5px;}
 
 /*EXPANDO BUTTONS*/
 .expando-button,
@@ -1239,6 +1229,8 @@ body:not(.submit-page) .tabmenu::after {
 
 	.sidecontentbox a.helplink:hover {text-decoration: none;}
 
+	.sidecontentbox a.helplink:active {background-color: #ae9df4}
+
 /*OP TAG*/
 
 div .thing .tagline .author.submitter:before,
@@ -1328,7 +1320,7 @@ a.author.moderator:after {content: "";}
  }
 
 body:not(.comments-page) div.content .entry {
-    /* border-bottom: 1px solid #e1e1e1; */
+    border-bottom: 1px solid #e1e1e1;
     padding: 13px;
 }
 
@@ -1345,7 +1337,7 @@ body:not(.comments-page) div.content .entry {
 
 .res .entry {transition: all 0.10s ease;}
 
-body:not(.comments-page) .RES-keyNav-activeElement, body:not(.comments-page) .RES-keyNav-activeElement .md-container {
+.RES-keyNav-activeElement, .RES-keyNav-activeElement .md-container {
     padding-left: 15px !important;
     border-left: 3px solid;
 }
@@ -1355,7 +1347,7 @@ div.commentarea div.RES-keyNav-activeElement .md {
 }
 
 /*Body background*/
-body {background: /*COLOR0*/;}
+body {background: #e6e6e8;}
 
 /*Expando no outline*/
 .entry.RES-keyNav-activeElement div.md, .commentarea .entry.RES-keyNav-activeElement div.noncollapsed, .entry.RES-keyNav-activeElement .usertext-body, .new-comment .usertext-body .md {
@@ -1781,7 +1773,7 @@ h2 {
 
 .link .tagline {
 	color: #666;
-	font-size: 15px;
+	font-size: 12px;
 	margin-top: 3px;
  }
 
@@ -1834,17 +1826,12 @@ body:not(.submit-page) .tabmenu::after {
 div.content {
 	border-radius: 4px;
 	margin: 15px 335px 10px 16px;
-	/* border: 1px solid #e1e1e1; */
-	background-color: /*COLOR0*/;
+	border: 1px solid #e1e1e1;
+	background-color: #fff;
 	font-size: 12px;
  }
 
 .midcol {margin-left: 0;}
-
-body >.content .link {
-	background-color: #fff;
-	margin-bottom: 3px;
-}
 
 body >.content .link .rank, .rank-spacer {display: none;}
 
@@ -2018,6 +2005,7 @@ body:not(.search-page) #search input[type=text] {
 	.users-online:before {display: none;}
 
 .flair, .linkflairlabel {
+	margin-right: 0.8em;
 	padding: 2px 4px;
  }
 
@@ -2043,9 +2031,7 @@ body:not(.search-page) #search input[type=text] {
 .score.unvoted {color: #666;}
 div.midcol.likes, div.midcol.dislikes, div.midcol.unvoted,div.reddit-entry {padding: 0px 10px;}
 
-#header-img.default-header:hover, #header-img:hover {
-	opacity: .7;
-}
+#header-img.default-header:hover, #header-img:hover {opacity: .7;}
 
 .users-online {margin-bottom: 2em;}
 
@@ -2147,7 +2133,7 @@ div.leavemoderator {
 .RESshortcutside, 
 .RESDashboardToggle
 
-    {background: /*COLOR3*/;}
+    {background: #80d04b;}
 
 /*SIDEBAR BUTTONS HOVER*/
 
@@ -2155,7 +2141,7 @@ div.leavemoderator {
 body.res .RESshortcutside:hover,
 .RESDashboardToggle:hover
 
-    {background: /*COLOR3HL*/;}
+    {background: #A6DE81;}
 
 /*SIDEBAR BUTTONS ACTIVE*/
 
@@ -2163,7 +2149,7 @@ body.res .RESshortcutside:hover,
 body.res .RESshortcutside:active,
 .RESDashboardToggle:active
 
-    {background: /*COLOR3*/;}
+    {background: #599134;}
 
 
 /*BUTTONS ON SIDEBAR - Buttonstyle one */
@@ -2286,20 +2272,9 @@ body.res .RESshortcutside:active,
 .flair-orangeflair[title]:before {background: #E16941;}
 .flair-blueflair[title]:before {background: RoyalBlue;}
 
-/* Disable flairs in main page */
-body:not(.comments-page) div.link .flair {
-	display: none;
-}
 
-.flair {
-	background: url(%%flairspritesheet2%%) no-repeat -9999px;
-	border: 0;
-	padding: 0;
-	vertical-align: middle;
-	line-height: 32px;
-}
 
-/*FLAIRS DATA*/
+
 
 .titlebox form.toggle {background: none;}
 
@@ -2312,7 +2287,7 @@ body:not(.comments-page) div.link .flair {
 
 /*NO PRESET DEFAULT FLAIR*/
 .linkflairlabel {
-    background: /*COLOR3DK*/;
+    background: RoyalBlue;
     color: #FFF;
     font-weight: bold;
     padding: 2px 10px;
@@ -2728,113 +2703,45 @@ color.
 
 		/*DEFAULT COLOR*/
 
-		.RESDashboardToggle.remove,.RESSubscriptionButton,.RESshortcutside.remove,.panestack-title a.title-button,.panestack-title a.title-button.gold,.side .titlebox .md h4 a,button,.commentarea .comment a.expand:hover
+		.RESDashboardToggle.remove,.RESSubscriptionButton,.RESshortcutside.remove,.fancy-toggle-button .remove,.panestack-title a.title-button,.panestack-title a.title-button.gold,.side .titlebox .md h4 a,.sidecontentbox a.helplink,button,.commentarea .comment a.expand:hover
 
-		{background:/*COLOR3*/}
+		{background:#42acec}
  
-		.commentarea span.score, .comment .flat-list li a:hover,.comment .flat-list li a[onclick*=reply],.commentNavSortType:hover,.commentarea .menuarea .toggle a:hover,.error,.link .domain a:hover,.link .entry .buttons li a:hover,.loadFlat:hover,.submit-page .roundfield a,.thing .title,#progressIndicator a#NERStaticLink,.deepthread a,.deepthread::after,.linefield .title
+		.commentarea span.score, .comment .flat-list li a:hover,.comment .flat-list li a[onclick*=reply],.commentNavSortType:hover,.commentarea .menuarea .toggle a:hover,.entry .buttons .may-blank,.error,.link .domain a:hover,.link .entry .buttons li a:hover,.loadFlat:hover,.submit-page .roundfield a,.thing .title,#progressIndicator a#NERStaticLink,.deepthread a,.deepthread::after,.linefield .title
 
-		{color:/*COLOR3*/}
+		{color:#42acec}
  
 
-		.roundfield input[type=url]:focus,.roundfield input[type=text]:focus,.roundfield textarea:focus,.usertext-edit textarea:focus,#img-name:focus,.roundfield input[type="url"]:focus,.flairlist .flair-jump input[type="text"]:focus
+		.roundfield input[type=url]:focus,.roundfield input[type=text]:focus,.roundfield textarea:focus,.usertext-edit textarea:focus,#img-name:focus,.roundfield input[type="url"]:focus,.flairlist .flair-jump input[type="text"]:focus, .RES-keyNav-activeElement, .RES-keyNav-activeElement .md-container
 
-		{border-color:/*COLOR2*/}
+		{border-color:#42acec}
 
 
 		/*HOVER - LIGHTER SHADE OF DEFAULT COLOR*/
 
-		.RESDashboardToggle.remove:hover,.comments-page .RESSubscriptionButton:hover,.panestack-title a.title-button.gold:hover,.panestack-title a.title-button:hover,.side .titlebox .md h4 a:hover,body.res .side .RESshortcutside.remove:hover,button:hover
+		.RESDashboardToggle.remove:hover,.comments-page .RESSubscriptionButton:hover,.fancy-toggle-button .remove:hover,.panestack-title a.title-button.gold:hover,.panestack-title a.title-button:hover,.side .titlebox .md h4 a:hover,.sidecontentbox a.helplink:hover,body.res .side .RESshortcutside.remove:hover,button:hover
 
-		{background:/*COLOR3HL*/}
+		{background:#42acec}
 
 		/*ACTIVE - DARKER SHADE OF DEFAULT COLOR*/
  
-		.RESDashboardToggle.remove:active,.RESshortcutside.remove:active,.comments-page .RESSubscriptionButton:active,.panestack-title a.title-button.gold:active,.panestack-title a.title-button:active,.side .titlebox .md h4 a:active,button:active
+		.RESDashboardToggle.remove:active,.RESshortcutside.remove:active,.comments-page .RESSubscriptionButton:active,.fancy-toggle-button .remove:active,.panestack-title a.title-button.gold:active,.panestack-title a.title-button:active,.side .titlebox .md h4 a:active,.sidecontentbox a.helplink:active,button:active
 
-		{background:/*COLOR3DK*/}
+		{background:#42acec}
 
 /*SET TWO - SECONDARY COLOR*/
 
 		/*DEFAULT*/
  
-		.thing .md table thead tr th,.morelink,.side .titlebox .md h3 a,.tabmenu,.wiki-page-content .md table thead tr th,.fancy-toggle-button .remove,.sidecontentbox a.helplink
-	   	{background:/*COLOR3*/}
+		.thing .md table thead tr th,.morelink,.side .titlebox .md h3 a,.tabmenu,.wiki-page-content .md table thead tr th {background:#42acec}
 
 		/*HOVER - LIGHTER SHADE OF DEFAULT COLOR*/
 
-		.morelink:hover,.side .titlebox .md h3 a:hover,.fancy-toggle-button .remove:hover,.sidecontentbox a.helplink:hover
-	   	{background:/*COLOR3HL*/}
+		.morelink:hover,.side .titlebox .md h3 a:hover {background:#42acec}
  
 		/*ACTIVE - DARKER SHADE OF DEFAULT COLOR*/
 
-		.morelink:active, .side .titlebox .md h3 a:active,.fancy-toggle-button .remove:active,.sidecontentbox a.helplink:active
-	   	{background: /*COLOR3*/;}
-
-/* SET THREE - ALTERNATING COLORS */
-body:not(.comments-page) div.link > div.RES-keyNav-activeElement,body:not(.comments-page) div.link > div.RES-keyNav-activeElement .md-container {
-	border-color: /*COLOR1*/ !important;
-	background-color: /*COLOR1LIGHT*/ !important;
-}
-
-body:not(.comments-page) div.link:nth-of-type(8n+1) > div.RES-keyNav-activeElement, body:not(.comments-page) div.link:nth-of-type(3n) >  div.RES-keyNav-activeElement .md-container {
-	border-color: /*COLOR2*/ !important;
-	background-color: /*COLOR2LIGHT*/ !important;
-}
-
-body:not(.comments-page) div.link:nth-of-type(8n+3) > div.RES-keyNav-activeElement, body:not(.comments-page) div.link:nth-of-type(3n) >  div.RES-keyNav-activeElement .md-container {
-	border-color: /*COLOR4*/ !important;
-	background-color: /*COLOR4LIGHT*/ !important;
-}
-
-body:not(.comments-page) div.link:nth-of-type(8n+5) > div.RES-keyNav-activeElement, body:not(.comments-page) div.link:nth-of-type(3n) >  div.RES-keyNav-activeElement .md-container {
-	border-color: /*COLOR3*/ !important;
-	background-color: /*COLOR3LIGHT*/ !important;
-}
-
-div.link {
-	border-top: 1px solid /*COLOR1*/;
-	border-right: 1px solid /*COLOR1*/;
-	border-bottom: 1px solid /*COLOR1*/;
-	border-left: 6px solid /*COLOR1*/;
-}
-
-div.link:nth-of-type(8n+1) {
-	border-top: 1px solid /*COLOR2*/;
-	border-right: 1px solid /*COLOR2*/;
-	border-bottom: 1px solid /*COLOR2*/;
-	border-left: 6px solid /*COLOR2*/;
-}
-
-div.link:nth-of-type(8n+3) {
-	border-top: 1px solid /*COLOR4*/;
-	border-right: 1px solid /*COLOR4*/;
-	border-bottom: 1px solid /*COLOR4*/;
-	border-left: 6px solid /*COLOR4*/;
-}
-
-div.link:nth-of-type(8n+5) {
-	border-top: 1px solid /*COLOR3*/;
-	border-right: 1px solid /*COLOR3*/;
-	border-bottom: 1px solid /*COLOR3*/;
-	border-left: 6px solid /*COLOR3*/;
-}
-
-div.link .buttons .may-blank {
-	color: /*COLOR1DK*/;
-}
-
-div.link:nth-of-type(8n+1) .buttons .may-blank {
-	color: /*COLOR2DK*/;
-}
-
-div.link:nth-of-type(8n+3) .buttons .may-blank {
-	color: /*COLOR4DK*/;
-}
-
-div.link:nth-of-type(8n+5) .buttons .may-blank {
-	color: /*COLOR3DK*/;
-}
+		.morelink:active, .side .titlebox .md h3 a:active {background: #42acec;}
 
 /*END CHANGE COLOR SCHEME*/
 
@@ -2919,211 +2826,6 @@ div.link:nth-of-type(8n+5) .buttons .may-blank {
 }
 
 .res #RESShortcutsViewport {margin-right: 70px;}
-
-
-
-div.usertext-body div p a[href^="https://www.reddit.com/r/gfriend"] {
-    content:"";
-    background-image:url(%%themebutton-laugh%%);
-	width: 109px;
-	height: 150px;
-    position:relative;
-    display:inline-block;
-	margin-left: 25px;
-}
-
-div.usertext-body div p a[href="https://gf.reddit.com/r/gfriend"] {
-    content:"";
-    background-image:url(%%themebutton-love%%);
-	width: 109px;
-	height: 150px;
-    position:relative;
-    display:inline-block;
-}
-
-
-/* REACTION GIFS */
-
-@keyframes reaction-kiss1 {
-	0% {background-position:0px 0px;}
-	6.55% {background-position:-140px 0px;}
-	13.1% {background-position:-280px 0px;}
-	19.64% {background-position:-420px 0px;}
-	26.19% {background-position:-560px 0px;}
-	33.33% {background-position:-700px 0px;}
-	39.88% {background-position:-840px 0px;}
-	46.43% {background-position:-980px 0px;}
-	52.98% {background-position:-1120px 0px;}
-	59.52% {background-position:-1260px 0px;}
-	66.07% {background-position:-1400px 0px;}
-	72.62% {background-position:-1540px 0px;}
-	79.17% {background-position:-1680px 0px;}
-	85.71% {background-position:-1820px 0px;}
-	92.86%, 100% {background-position:-1960px 0px;}
-}
-a[href="#kiss1"] {
-	background:url(%%reaction-kiss1%%) no-repeat 0px 0px;
-	display:inline-block;
-	width:140px;
-	height:140px;
-	animation: reaction-kiss1 1.68s infinite steps(1);
-	font-size:0px;
-	cursor:default
-}
-a[href="#kiss1"]:active {
-	pointer-events: none;
-}
-@keyframes reaction-thumbsup1 {
-	0% {background-position:0px 0px;}
-	9.09% {background-position:-150px 0px;}
-	18.18% {background-position:-300px 0px;}
-	27.27% {background-position:-450px 0px;}
-	36.36% {background-position:-600px 0px;}
-	45.45% {background-position:-750px 0px;}
-	54.55% {background-position:-900px 0px;}
-	63.64% {background-position:-1050px 0px;}
-	72.73% {background-position:-1200px 0px;}
-	81.82% {background-position:-1350px 0px;}
-	90.91%, 100% {background-position:-1500px 0px;}
-}
-a[href="#thumbsup1"] {
-	background:url(%%reaction-thumbsup1%%) no-repeat 0px 0px;
-	display:inline-block;
-	width:150px;
-	height:150px;
-	animation: reaction-thumbsup1 1.1s infinite steps(1);
-	font-size:0px;
-	cursor:default
-}
-a[href="#thumbsup1"]:active {
-	pointer-events: none;
-}
-@keyframes reaction-thumbsup2 {
-	0% {background-position:0px 0px;}
-	4.76% {background-position:-150px 0px;}
-	9.52% {background-position:-300px 0px;}
-	14.29% {background-position:-450px 0px;}
-	19.05% {background-position:-600px 0px;}
-	23.81% {background-position:-750px 0px;}
-	28.57% {background-position:-900px 0px;}
-	33.33% {background-position:-1050px 0px;}
-	38.1% {background-position:-1200px 0px;}
-	42.86% {background-position:-1350px 0px;}
-	47.62% {background-position:-1500px 0px;}
-	52.38% {background-position:-1650px 0px;}
-	57.14% {background-position:-1800px 0px;}
-	61.9% {background-position:-1950px 0px;}
-	66.67% {background-position:-2100px 0px;}
-	71.43% {background-position:-2250px 0px;}
-	76.19% {background-position:-2400px 0px;}
-	80.95% {background-position:-2550px 0px;}
-	85.71% {background-position:-2700px 0px;}
-	90.48% {background-position:-2850px 0px;}
-	95.24%, 100% {background-position:-3000px 0px;}
-}
-a[href="#thumbsup2"] {
-	background:url(%%reaction-thumbsup2%%) no-repeat 0px 0px;
-	display:inline-block;
-	width:150px;
-	height:84px;
-	animation: reaction-thumbsup2 2.1s infinite steps(1);
-	font-size:0px;
-	cursor:default
-}
-a[href="#thumbsup2"]:active {
-	pointer-events: none;
-}
-@keyframes reaction-thumbsup3 {
-	0% {background-position:0px 0px;}
-	4.76% {background-position:-150px 0px;}
-	9.52% {background-position:-300px 0px;}
-	14.29% {background-position:-450px 0px;}
-	19.05% {background-position:-600px 0px;}
-	23.81% {background-position:-750px 0px;}
-	28.57% {background-position:-900px 0px;}
-	33.33% {background-position:-1050px 0px;}
-	38.1% {background-position:-1200px 0px;}
-	42.86% {background-position:-1350px 0px;}
-	47.62% {background-position:-1500px 0px;}
-	52.38% {background-position:-1650px 0px;}
-	57.14% {background-position:-1800px 0px;}
-	61.9% {background-position:-1950px 0px;}
-	66.67% {background-position:-2100px 0px;}
-	71.43% {background-position:-2250px 0px;}
-	76.19% {background-position:-2400px 0px;}
-	80.95% {background-position:-2550px 0px;}
-	85.71% {background-position:-2700px 0px;}
-	90.48% {background-position:-2850px 0px;}
-	95.24%, 100% {background-position:-3000px 0px;}
-}
-a[href="#thumbsup3"] {
-	background:url(%%reaction-thumbsup3%%) no-repeat 0px 0px;
-	display:inline-block;
-	width:150px;
-	height:84px;
-	animation: reaction-thumbsup3 2.1s infinite steps(1);
-	font-size:0px;
-	cursor:default
-}
-a[href="#thumbsup3"]:active {
-	pointer-events: none;
-}
-@keyframes reaction-wave1 {
-	0% {background-position:0px 0px;}
-	5.88% {background-position:-150px 0px;}
-	11.76% {background-position:-300px 0px;}
-	17.65% {background-position:-450px 0px;}
-	23.53% {background-position:-600px 0px;}
-	29.41% {background-position:-750px 0px;}
-	35.29% {background-position:-900px 0px;}
-	41.18% {background-position:-1050px 0px;}
-	47.06% {background-position:-1200px 0px;}
-	52.94% {background-position:-1350px 0px;}
-	58.82% {background-position:-1500px 0px;}
-	64.71% {background-position:-1650px 0px;}
-	70.59% {background-position:-1800px 0px;}
-	76.47% {background-position:-1950px 0px;}
-	82.35% {background-position:-2100px 0px;}
-	88.24% {background-position:-2250px 0px;}
-	94.12%, 100% {background-position:-2400px 0px;}
-}
-a[href="#wave1"] {
-	background:url(%%reaction-wave1%%) no-repeat 0px 0px;
-	display:inline-block;
-	width:150px;
-	height:84px;
-	animation: reaction-wave1 1.7s infinite steps(1);
-	font-size:0px;
-	cursor:default
-}
-a[href="#wave1"]:active {
-	pointer-events: none;
-}
-	@keyframes reaction-wave2 {
-	0% {background-position:0px 0px;}
-	9.09% {background-position:-150px 0px;}
-	18.18% {background-position:-300px 0px;}
-	27.27% {background-position:-450px 0px;}
-	36.36% {background-position:-600px 0px;}
-	45.45% {background-position:-750px 0px;}
-	54.55% {background-position:-900px 0px;}
-	63.64% {background-position:-1050px 0px;}
-	72.73% {background-position:-1200px 0px;}
-	81.82% {background-position:-1350px 0px;}
-	90.91%, 100% {background-position:-1500px 0px;}
-}
-a[href="#wave2"] {
-	background:url(%%reaction-wave2%%) no-repeat 0px 0px;
-	display:inline-block;
-	width:150px;
-	height:84px;
-	animation: reaction-wave2 1.1s infinite steps(1);
-	font-size:0px;
-	cursor:default
-}
-a[href="#wave2"]:active {
-	pointer-events: none;
-}
 
 /*DARK MODE*/
 
@@ -3432,160 +3134,6 @@ html[lang="dm"] .RES-keyNav-activeElement .md-container {
 
 
 
-
-
-
-html[lang="gf"] span.pagename.redditname a {
-	background-image: url(%%sublogo-love%%);
-}
-
-html[lang="gf"] #header { 
-   background : url(/*LOVE_BANNER_NAME*/);
-   background-size: cover;
-} 
-html[lang="gf"] #header-img.default-header {
-	background-image: url(%%rddtlogo-love%%);
-}
-
-html[lang="gf"] .tabmenu li a {
-	background-color: /*LOVE_TABMENUBG*/;
-	border-color: /*LOVE_TABMENUBG*/;
-}
-html[lang="gf"] .tabmenu li:hover a,
-html[lang="gf"] .tabmenu li.selected a {
-	background-color: /*LOVE_TABMENUBGHL*/;
-}
-
-html[lang="gf"] body {background: /*LOVE_COLOR0*/;}
-html[lang="gf"] div.content {
-	border-radius: 4px;
-	margin: 15px 335px 10px 16px;
-	/* border: 1px solid #e1e1e1; */
-	background-color: /*LOVE_COLOR0*/;
-	font-size: 12px;
- }
-.side::before {
-    background: url(%%sidebar-love%%) no-repeat;
-}
-
-html[lang="gf"] .RESDashboardToggle.remove,
-html[lang="gf"] .RESSubscriptionButton,
-html[lang="gf"] .RESshortcutside.remove,
-html[lang="gf"] .panestack-title a.title-button,
-html[lang="gf"] .panestack-title a.title-button.gold,
-html[lang="gf"] .side .titlebox .md h4 a,
-html[lang="gf"] button,
-html[lang="gf"] .commentarea .comment a.expand:hover
-
-{background:/*LOVE_COLOR1*/;}
-
-html[lang="gf"] .commentarea span.score,
-html[lang="gf"] .comment .flat-list li a:hover,
-html[lang="gf"] .comment .flat-list li a[onclick*=reply],
-html[lang="gf"] .commentNavSortType:hover,
-html[lang="gf"] .commentarea .menuarea .toggle a:hover,
-html[lang="gf"] .error,
-html[lang="gf"] .link .domain a:hover,
-html[lang="gf"] .loadFlat:hover,
-html[lang="gf"] .submit-page .roundfield a,
-html[lang="gf"] #progressIndicator a#NERStaticLink,
-html[lang="gf"] .deepthread a,
-html[lang="gf"] .deepthread::after,
-html[lang="gf"] .linefield .title
-
-{color:/*LOVE_COLOR1*/;}
-
-html[lang="gf"] .thing .title,
-html[lang="gf"] .link .entry .buttons li a,
-html[lang="gf"] .link .entry .buttons li a:hover
-{ color: /*LOVE_COLOR1DK*/; }
-
-html[lang="gf"] .linkflairlabel
-{ background-color: /*LOVE_COLOR1DK*/; }
-
-html[lang="gf"] .roundfield input[type=url]:focus,
-html[lang="gf"] .roundfield input[type=text]:focus,
-html[lang="gf"] .roundfield textarea:focus,
-html[lang="gf"] .usertext-edit textarea:focus,
-html[lang="gf"] #img-name:focus,
-html[lang="gf"] .roundfield input[type="url"]:focus,
-html[lang="gf"] .flairlist .flair-jump input[type="text"]:focus
-
-{border-color:/*LOVE_COLOR2*/}
-
-
-/*HOVER - LIGHTER SHADE OF DEFAULT COLOR*/
-
-html[lang="gf"] .RESDashboardToggle.remove:hover,
-html[lang="gf"] .comments-page .RESSubscriptionButton:hover,
-html[lang="gf"] .panestack-title a.title-button.gold:hover,
-html[lang="gf"] .panestack-title a.title-button:hover,
-html[lang="gf"] .side .titlebox .md h4 a:hover,
-html[lang="gf"] body.res .side .RESshortcutside.remove:hover,
-html[lang="gf"] button:hover
-
-{background:/*LOVE_COLOR1HL*/}
-
-/*ACTIVE - DARKER SHADE OF DEFAULT COLOR*/
-
-html[lang="gf"] .RESDashboardToggle.remove:active,
-html[lang="gf"] .RESshortcutside.remove:active,
-html[lang="gf"] .comments-page .RESSubscriptionButton:active,
-html[lang="gf"] .panestack-title a.title-button.gold:active,
-html[lang="gf"] .panestack-title a.title-button:active,
-html[lang="gf"] .side .titlebox .md h4 a:active,
-html[lang="gf"] button:active
-
-{background:/*LOVE_COLOR1*/}
-
-/*SET TWO - SECONDARY COLOR*/
-
-/*DEFAULT*/
-
-html[lang="gf"] .thing .md table thead tr th,
-html[lang="gf"] .morelink,
-html[lang="gf"] .side .titlebox .md h3 a,
-html[lang="gf"] .tabmenu,
-html[lang="gf"] .wiki-page-content .md table thead tr th,
-html[lang="gf"] .fancy-toggle-button .remove,
-html[lang="gf"] .sidecontentbox a.helplink
-{background:/*LOVE_COLOR3*/}
-
-/*HOVER - LIGHTER SHADE OF DEFAULT COLOR*/
-
-html[lang="gf"] .morelink:hover,
-html[lang="gf"] .side .titlebox .md h3 a:hover,
-html[lang="gf"] .fancy-toggle-button .remove:hover,
-html[lang="gf"] .sidecontentbox a.helplink:hover
-{background:/*LOVE_COLOR3HL*/}
-
-/*ACTIVE - DARKER SHADE OF DEFAULT COLOR*/
-
-html[lang="gf"] .morelink:active,
-html[lang="gf"] .side .titlebox .md h3 a:active,
-html[lang="gf"] .fancy-toggle-button .remove:active,
-html[lang="gf"] .sidecontentbox a.helplink:active
-{background: /*LOVE_COLOR3*/;}
-
-/* SET THREE - ALTERNATING COLORS */
-html[lang="gf"] body:not(.comments-page) div.link > div.RES-keyNav-activeElement, 
-html[lang="gf"] body:not(.comments-page) div.link > div.RES-keyNav-activeElement .md-container {
-border-color: /*LOVE_COLOR1*/ !important;
-background-color: /*LOVE_COLOR1LIGHT*/ !important;
-}
-
-html[lang="gf"] div.link {
-border-top: 1px solid /*LOVE_COLOR1*/;
-border-right: 1px solid /*LOVE_COLOR1*/;
-border-bottom: 1px solid /*LOVE_COLOR1*/;
-border-left: 6px solid /*LOVE_COLOR1*/;
-}
-
-
-
-
-
-
 /*
 
 Credits
@@ -3621,8 +3169,7 @@ read message by Hakan Yalcin from the Noun Project
 /*HEADER*/
 
 #header { 
-   background : url(/*BANNER_NAME*/);  background-size: cover
-} 
+   background : url(%%banner12%%);  background-size: cover} 
 
 /*END HEADER*/
 
@@ -3632,8 +3179,8 @@ read message by Hakan Yalcin from the Noun Project
     content: "";
     padding-top: 322px;
     width: 300px;
+    background: url(%%eun%%) no-repeat;
     border-radius: 5px 5px 0px 0px;
-    background: url(%%sidebar-laugh%%) no-repeat;
     background-size:contain;
     background-size:300px;
 }
@@ -3642,7 +3189,7 @@ read message by Hakan Yalcin from the Noun Project
 /*SUBSCRIBERS TEXT*/
 .titlebox .word {display: none}
 
-.titlebox .number:after {content: " Buddies";}
+.titlebox .number:after {content: " Readers";}
 
 .titlebox .users-online span.number:after {content: " buddies here now";}
 /*END SUBSCRIBERS TEXT*/
