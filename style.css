@@ -548,7 +548,18 @@ body.res #header-bottom-right #mail.havemail {top: -1px !important;}
 .message-count {left: 2px; top: -6px; background-color: #ff9400;}
 
 /*USER BAR*/
-#header-bottom-right {background:none; top: 192px !important; right: 20px; padding: 0px !important;}
+#header-bottom-right {
+	background:none;
+	top: auto !important;
+	/* right: 20px; */
+	bottom: 0px !important;
+	right: 0px;
+	padding: 4px !important;
+	background-color: /*TABMENUBG*/;
+	border-width: 1px 1px 0px 1px;
+	border-style: solid;
+	border-color: /*COLOR3DK*/;
+}
 #header-bottom-right a, #header-bottom-right .user, #header-bottom-right .user .userkarma {
     color: #FFF;
     font-size: 11px;
@@ -567,22 +578,22 @@ body.res #header-bottom-right #mail.havemail {top: -1px !important;}
 /*USERBAR TOGGLE*/
 .res #userbarToggle {
     width: 11px;
-    height: 48px;
+    /* height: 48px; */
     background-color: transparent;
     border: medium none;
-    line-height: 47px;
+    /* line-height: 47px; */
     color: #FFF;
-    padding-left: 5px;
-    padding-right: 8px;
-    margin-left: -6px;
+    /* padding-left: 5px; */
+    /* padding-right: 8px; */
     transition: all 200ms ease 0s;
-    bottom: 2px;
+    /* bottom: 2px; */
     border-radius: 0px;
-    margin-bottom: -15px;
+    /* margin-bottom: -11px; */
+	left: 0px;
 }
 
 .res #userbarToggle:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: /*TABMENUHL*/;
 }
 
 #userbarToggle.userbarShow {
@@ -3445,6 +3456,13 @@ html[lang="gf"] #header {
 } 
 html[lang="gf"] #header-img.default-header {
 	background-image: url(%%rddtlogo-love%%);
+}
+html[lang="gf"] #header-bottom-right {
+    background-color: /*LOVE_TABMENUBG*/;
+	border-color: /*LOVE_COLOR3DK*/;
+}
+html[lang="gf"] .res #userbarToggle:hover {
+    background-color: /*LOVE_TABMENUBGHL*/;
 }
 
 html[lang="gf"] .tabmenu li a {
