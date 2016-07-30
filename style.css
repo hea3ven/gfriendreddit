@@ -2303,7 +2303,7 @@ body:not(.comments-page) div.link .flair {
 }
 
 .flair {
-	background: url(%%flairspritesheet2%%) no-repeat -9999px;
+	background: url(%%flairspritesheet%%) no-repeat -9999px;
 	border: 0;
 	padding: 0;
 	vertical-align: middle;
