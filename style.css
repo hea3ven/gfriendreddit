@@ -10,7 +10,7 @@
 span.pagename.redditname a {
 	color: transparent;
 	display: block;
-	width: 100%; /*DO NOT CHANGE - TWEAK HEIGHT INSTEAD*/
+	/* width: 100%; */ /*DO NOT CHANGE - TWEAK HEIGHT INSTEAD*/
 	background-image: url(%%sublogo-laugh%%);
         height: 120px;
 	background-size: contain;
