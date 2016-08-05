@@ -1882,6 +1882,7 @@ body:not(.comments-page) > .content .link .midcol, .midcol-spacer {margin: 10px 
 	border: 1px solid #e1e1e1;
 	border-radius: 5px;
 	padding: 0px;
+	padding-top: 300px;
 	margin: 150px 16px 100px;
 	width: 300px;
 	background: #ffffff;
@@ -2722,13 +2723,6 @@ form#image-upload.image-upload {
  
         SUBREDDIT COLOR SCHEME
  
-For aesthetic purposes, please keep everything
-of the same set in one color. 
- 
-The text color for the buttons and backgrounds 
-is white. Please make sure the chosen background
-color will provide enough contrast with the text
-color. 
 ——————————————————————————————————————————————*/
 
 /*SET ONE*/
@@ -3538,9 +3532,10 @@ html[lang="gf"] div.content {
 	background-color: /*LOVE_COLOR0*/;
 	font-size: 12px;
  }
-.side::before {
+
+/*.side::before {
     background: url(%%sidebar-love%%) no-repeat;
-}
+}*/
 
 html[lang="gf"] .RESDashboardToggle.remove,
 html[lang="gf"] .RESSubscriptionButton,
@@ -3654,41 +3649,6 @@ border-right: 1px solid /*LOVE_COLOR1*/;
 border-bottom: 1px solid /*LOVE_COLOR1*/;
 border-left: 6px solid /*LOVE_COLOR1*/;
 }
-
-
-
-
-
-
-/*
-
-Credits
- 
-/r/EnTypo for Enhanced Typograhy
-/r/Apple for Messages alert
-/r/Naut for Moderator Distinguish Message
-/u/Karma_4_free for Subreddit List style from /r/Apicem
-/r/Overwatch for comment collapse button
-/r/Slight for input box underline
-
-MANDATORY LEGAL NOTICES/CREDITS - DO NOT REMOVE
-
-Gear by Alexander Simone from the Noun Project
-Compass by Vicons Design from the Noun Project
-Arrow Up by Raashid.A from the Noun Project
-Add by John Chapman from the Noun Project
-Thumbtack by Bonnie Beach from the Noun Project
-Conversation by vijay sekhar from the Noun Project
-Warning by Lorena Salagre from the Noun Project
-Sliders by Remco Homberg from the Noun Project
-Power by Gregor Črešnar from the Noun Project
-message by Hakan Yalcin from the Noun Project
-read message by Hakan Yalcin from the Noun Project
-
-*/
-
-
-
 /*ADD SNIPPETS BELOW THIS LINE
 ============================================================================*/
 
@@ -3701,7 +3661,7 @@ read message by Hakan Yalcin from the Noun Project
 /*END HEADER*/
 
 /*SIDEBAR IMAGE*/
-.side::before {
+/*.side::before {
     display: block;
     content: "";
     padding-top: 322px;
@@ -3710,6 +3670,64 @@ read message by Hakan Yalcin from the Noun Project
     background: url(%%sidebar-laugh%%) no-repeat;
     background-size:contain;
     background-size:300px;
+}*/
+input[name=uh] ~ a:after {
+	position: absolute;
+	top: 30px;
+	right: 5px;
+	width: 300px;
+	height: 300px;
+}
+.res-navTop input[name=uh] ~ a:after {
+    top: 179px;
+	right: 16px;
+}
+body:not(.loggedin) .side:before {
+    content: url(%%sidebar-laugh%%);
+}
+input[name=uh][value^="0"] ~ a:after { content: url('%%sidebar-aug-yerin1%%'); }
+input[name=uh][value^="1"] ~ a:after { content: url('%%sidebar-aug-yerin2%%'); }
+input[name=uh][value^="2"] ~ a:after { content: url('%%sidebar-aug-yerin3%%'); }
+input[name=uh][value^="3"] ~ a:after { content: url('%%sidebar-aug-yerin4%%'); }
+input[name=uh][value^="4"] ~ a:after { content: url('%%sidebar-aug-umji1%%');  }
+input[name=uh][value^="5"] ~ a:after { content: url('%%sidebar-aug-umji2%%');  }
+input[name=uh][value^="6"] ~ a:after { content: url('%%sidebar-aug-umji3%%');  }
+input[name=uh][value^="7"] ~ a:after { content: url('%%sidebar-aug-umji4%%');  }
+input[name=uh][value^="8"] ~ a:after { content: url('%%sidebar-aug-yxu1%%');   }
+input[name=uh][value^="9"] ~ a:after { content: url('%%sidebar-aug-yxu2%%');   }
+input[name=uh][value^="a"] ~ a:after { content: url('%%sidebar-aug-yerin1%%'); } 
+input[name=uh][value^="b"] ~ a:after { content: url('%%sidebar-aug-yerin2%%'); }
+input[name=uh][value^="c"] ~ a:after { content: url('%%sidebar-aug-yerin3%%'); }
+input[name=uh][value^="d"] ~ a:after { content: url('%%sidebar-aug-yerin4%%'); }
+input[name=uh][value^="e"] ~ a:after { content: url('%%sidebar-aug-umji1%%');  }
+input[name=uh][value^="f"] ~ a:after { content: url('%%sidebar-aug-umji2%%');  }
+input[name=uh][value^="g"] ~ a:after { content: url('%%sidebar-aug-umji3%%');  }
+input[name=uh][value^="h"] ~ a:after { content: url('%%sidebar-aug-umji4%%');  }
+input[name=uh][value^="i"] ~ a:after { content: url('%%sidebar-aug-yxu1%%');   }
+input[name=uh][value^="j"] ~ a:after { content: url('%%sidebar-aug-yxu2%%');   }
+input[name=uh][value^="k"] ~ a:after { content: url('%%sidebar-aug-yerin1%%'); }
+input[name=uh][value^="l"] ~ a:after { content: url('%%sidebar-aug-yerin2%%'); }
+input[name=uh][value^="m"] ~ a:after { content: url('%%sidebar-aug-yerin3%%'); }
+input[name=uh][value^="n"] ~ a:after { content: url('%%sidebar-aug-yerin4%%'); }
+input[name=uh][value^="o"] ~ a:after { content: url('%%sidebar-aug-umji1%%');  }
+input[name=uh][value^="p"] ~ a:after { content: url('%%sidebar-aug-umji2%%');  }
+input[name=uh][value^="q"] ~ a:after { content: url('%%sidebar-aug-umji3%%');  }
+input[name=uh][value^="r"] ~ a:after { content: url('%%sidebar-aug-umji4%%');  }
+input[name=uh][value^="s"] ~ a:after { content: url('%%sidebar-aug-yxu1%%');   }
+input[name=uh][value^="t"] ~ a:after { content: url('%%sidebar-aug-yxu2%%');   }
+input[name=uh][value^="u"] ~ a:after { content: url('%%sidebar-aug-yerin1%%'); }
+input[name=uh][value^="v"] ~ a:after { content: url('%%sidebar-aug-yerin2%%'); }
+input[name=uh][value^="w"] ~ a:after { content: url('%%sidebar-aug-umji1%%');  }
+input[name=uh][value^="x"] ~ a:after { content: url('%%sidebar-aug-umji2%%');  }
+input[name=uh][value^="y"] ~ a:after { content: url('%%sidebar-laugh%%');      }
+input[name=uh][value^="z"] ~ a:after { content: url('%%sidebar-love%%');        }
+.loggedin .side:before {
+    content: '';
+    position: absolute;
+    top: 376px;
+    height: 305px;
+    width: 300px;
+    z-index: 99;
 }
 /*END SIDEBAR IMAGE*/
 

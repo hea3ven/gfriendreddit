@@ -99,7 +99,7 @@ for flair in flairs:
         flairs_style += '	width: %dpx;\n' % flair_custom_widths[flair]
     flairs_style += '	height: %dpx;\n' % flair_size
     flairs_style += '	content:"";\n'
-    flairs_style += '	background-image:url(%%flairspritesheet2%%);\n'
+    flairs_style += '	background-image:url(%%flairspritesheet%%);\n'
     flairs_style += '   background-position: -0px -%dpx;\n' % offset
     flairs_style += '	position:relative;\n'
     flairs_style += '	display:inline-block;\n'
