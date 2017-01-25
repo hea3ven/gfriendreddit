@@ -3679,46 +3679,49 @@ input[name=uh] ~ a:after {
 	height: 300px;
 }
 #header-bottom-right input[name=uh] ~ a:after {
-    top: 179px;
+    top: 305px;
 	right: 16px;
+}
+body:not(.comments-page) #header-bottom-right input[name=uh] ~ a:after {
+    top: 179px;
 }
 body:not(.loggedin) .side:before {
     content: url(%%sidebar-laugh%%);
 }
-input[name=uh][value^="0"] ~ a:after { content: url('%%sidebar-oct-yuju1%%'); }
-input[name=uh][value^="1"] ~ a:after { content: url('%%sidebar-oct-yuju2%%'); }
-input[name=uh][value^="2"] ~ a:after { content: url('%%sidebar-oct-yuju3%%'); }
-input[name=uh][value^="3"] ~ a:after { content: url('%%sidebar-oct-yuju4%%'); }
-input[name=uh][value^="4"] ~ a:after { content: url('%%sidebar-oct-yuju5%%');  }
-input[name=uh][value^="5"] ~ a:after { content: url('%%sidebar-oct-yuju6%%');  }
-input[name=uh][value^="6"] ~ a:after { content: url('%%sidebar-oct-yuju1%%');  }
-input[name=uh][value^="7"] ~ a:after { content: url('%%sidebar-oct-yuju2%%');  }
-input[name=uh][value^="8"] ~ a:after { content: url('%%sidebar-oct-yuju3%%');   }
-input[name=uh][value^="9"] ~ a:after { content: url('%%sidebar-oct-yuju4%%');   }
-input[name=uh][value^="a"] ~ a:after { content: url('%%sidebar-oct-yuju5%%'); } 
-input[name=uh][value^="b"] ~ a:after { content: url('%%sidebar-oct-yuju6%%'); }
-input[name=uh][value^="c"] ~ a:after { content: url('%%sidebar-oct-yuju1%%'); }
-input[name=uh][value^="d"] ~ a:after { content: url('%%sidebar-oct-yuju2%%'); }
-input[name=uh][value^="e"] ~ a:after { content: url('%%sidebar-oct-yuju3%%');  }
-input[name=uh][value^="f"] ~ a:after { content: url('%%sidebar-oct-yuju4%%');  }
-input[name=uh][value^="g"] ~ a:after { content: url('%%sidebar-oct-yuju5%%');  }
-input[name=uh][value^="h"] ~ a:after { content: url('%%sidebar-oct-yuju6%%');  }
-input[name=uh][value^="i"] ~ a:after { content: url('%%sidebar-oct-yuju1%%');   }
-input[name=uh][value^="j"] ~ a:after { content: url('%%sidebar-oct-yuju2%%');   }
-input[name=uh][value^="k"] ~ a:after { content: url('%%sidebar-oct-yuju3%%'); }
-input[name=uh][value^="l"] ~ a:after { content: url('%%sidebar-oct-yuju4%%'); }
-input[name=uh][value^="m"] ~ a:after { content: url('%%sidebar-oct-yuju5%%'); }
-input[name=uh][value^="n"] ~ a:after { content: url('%%sidebar-oct-yuju6%%'); }
-input[name=uh][value^="o"] ~ a:after { content: url('%%sidebar-oct-yuju1%%');  }
-input[name=uh][value^="p"] ~ a:after { content: url('%%sidebar-oct-yuju2%%');  }
-input[name=uh][value^="q"] ~ a:after { content: url('%%sidebar-oct-yuju3%%');  }
-input[name=uh][value^="r"] ~ a:after { content: url('%%sidebar-oct-yuju4%%');  }
-input[name=uh][value^="s"] ~ a:after { content: url('%%sidebar-oct-yuju5%%');   }
-input[name=uh][value^="t"] ~ a:after { content: url('%%sidebar-oct-yuju6%%');   }
-input[name=uh][value^="u"] ~ a:after { content: url('%%sidebar-oct-yuju1%%'); }
-input[name=uh][value^="v"] ~ a:after { content: url('%%sidebar-oct-yuju2%%'); }
-input[name=uh][value^="w"] ~ a:after { content: url('%%sidebar-oct-yuju3%%');  }
-input[name=uh][value^="x"] ~ a:after { content: url('%%sidebar-oct-yuju4%%');  }
+input[name=uh][value^="0"] ~ a:after { content: url('%%sidebar-dec-sowon1%%'); }
+input[name=uh][value^="1"] ~ a:after { content: url('%%sidebar-dec-sowon2%%'); }
+input[name=uh][value^="2"] ~ a:after { content: url('%%sidebar-dec-sowon3%%'); }
+input[name=uh][value^="3"] ~ a:after { content: url('%%sidebar-dec-sowon4%%'); }
+input[name=uh][value^="4"] ~ a:after { content: url('%%sidebar-dec-sowon5%%');  }
+input[name=uh][value^="5"] ~ a:after { content: url('%%sidebar-dec-sowon6%%');  }
+input[name=uh][value^="6"] ~ a:after { content: url('%%sidebar-dec-sowon1%%');  }
+input[name=uh][value^="7"] ~ a:after { content: url('%%sidebar-dec-sowon2%%');  }
+input[name=uh][value^="8"] ~ a:after { content: url('%%sidebar-dec-sowon3%%');   }
+input[name=uh][value^="9"] ~ a:after { content: url('%%sidebar-dec-sowon4%%');   }
+input[name=uh][value^="a"] ~ a:after { content: url('%%sidebar-dec-sowon5%%'); } 
+input[name=uh][value^="b"] ~ a:after { content: url('%%sidebar-dec-sowon6%%'); }
+input[name=uh][value^="c"] ~ a:after { content: url('%%sidebar-dec-sowon1%%'); }
+input[name=uh][value^="d"] ~ a:after { content: url('%%sidebar-dec-sowon2%%'); }
+input[name=uh][value^="e"] ~ a:after { content: url('%%sidebar-dec-sowon3%%');  }
+input[name=uh][value^="f"] ~ a:after { content: url('%%sidebar-dec-sowon4%%');  }
+input[name=uh][value^="g"] ~ a:after { content: url('%%sidebar-dec-sowon5%%');  }
+input[name=uh][value^="h"] ~ a:after { content: url('%%sidebar-dec-sowon6%%');  }
+input[name=uh][value^="i"] ~ a:after { content: url('%%sidebar-dec-sowon1%%');   }
+input[name=uh][value^="j"] ~ a:after { content: url('%%sidebar-dec-sowon2%%');   }
+input[name=uh][value^="k"] ~ a:after { content: url('%%sidebar-dec-sowon3%%'); }
+input[name=uh][value^="l"] ~ a:after { content: url('%%sidebar-dec-sowon4%%'); }
+input[name=uh][value^="m"] ~ a:after { content: url('%%sidebar-dec-sowon5%%'); }
+input[name=uh][value^="n"] ~ a:after { content: url('%%sidebar-dec-sowon6%%'); }
+input[name=uh][value^="o"] ~ a:after { content: url('%%sidebar-dec-sowon1%%');  }
+input[name=uh][value^="p"] ~ a:after { content: url('%%sidebar-dec-sowon2%%');  }
+input[name=uh][value^="q"] ~ a:after { content: url('%%sidebar-dec-sowon3%%');  }
+input[name=uh][value^="r"] ~ a:after { content: url('%%sidebar-dec-sowon4%%');  }
+input[name=uh][value^="s"] ~ a:after { content: url('%%sidebar-dec-sowon5%%');   }
+input[name=uh][value^="t"] ~ a:after { content: url('%%sidebar-dec-sowon6%%');   }
+input[name=uh][value^="u"] ~ a:after { content: url('%%sidebar-dec-sowon1%%'); }
+input[name=uh][value^="v"] ~ a:after { content: url('%%sidebar-dec-sowon2%%'); }
+input[name=uh][value^="w"] ~ a:after { content: url('%%sidebar-dec-sowon3%%');  }
+input[name=uh][value^="x"] ~ a:after { content: url('%%sidebar-dec-sowon4%%');  }
 input[name=uh][value^="y"] ~ a:after { content: url('%%sidebar-laugh%%');      }
 input[name=uh][value^="z"] ~ a:after { content: url('%%sidebar-love%%');        }
 .loggedin .side:before {
