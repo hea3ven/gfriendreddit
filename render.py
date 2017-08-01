@@ -1,7 +1,10 @@
 #! /usr/bin/python
 
-banner = 'banner-laugh'
-love_banner = 'banner-love'
+banner = 'banner-3-military'
+love_banner = 'banner-4-knight'
+
+sublogo = 'sublogo-3-awak'
+rddtlogo = 'rddtlogo-3-awak'
 
 flairs = ['sinballoon', 'eunballoon', 'sourcelogo', 'sourcemusic', 'seasonofglass', 'flowerbud', 'snowflake', 'lol', 'eunha', 'umji', 'sinb', 'yuju', 'sowon', 'yerin', 'mandurin', 'manduwon']
 flair_custom_widths = {
@@ -10,32 +13,35 @@ flair_custom_widths = {
 flair_size = 40
 offset = 0
 
+sidebar = ['sidebar-mar-awak' + str(i) for i in range(1, 8)]
+
 colors = {
 # white
-    'color0': '#e4f0f8',
+    'color0': '#fef9f1',
     # 'color0': '#a5c4d7',
+# grey
+    'color1': '#2f1c0b',
+    'color1hl': '#d7ccc2',
+    'color1light': '#d7ccc2',
+    'color1dk': '#1e1207',
+# pale
+    'color2': '#d4c4a3',
+    'color2hl': '#e9dec7',
+    'color2light': '#fff3da',
+    'color2dk': '#a8a090',
 # green
-    'color1': '#27d09c',
-    'color1hl': '#7ef0cd',
-    'color1dk': '#127c5b',
-    'color1light': '#c5e1d9',
-# yellow
-    'color2': '#eb9b1a',
-    'color2light': '#f3e1c6',
-    'color2dk': '#886328',
-# blue
-    'color3': '#3d9dd7',
-    'color3hl': '#7fc4ee',
-    'color3light': '#BDDDD8',
-    'color3dk': '#246d99',
+    'color3': '#616238',
+    'color3hl': '#eef089',
+    'color3dk': '#2c2d19',
+    'color3light': '#e3e4ce',
 
-    'tabmenubg': 'rgba(61,157,215, 0.4)',
-    'tabmenubghl': 'rgba(61,157,215, 0.6)',
-# red
-    'color4': '#db3d3f',
-    'color4hl': '#e67f81',
-    'color4dk': '#9e393a',
-    'color4light': '#e1c7c7',
+    'tabmenubg': 'rgba(157,186,106, 0.4)',
+    'tabmenubghl': 'rgba(119,146,72, 0.6)',
+# light brown
+    'color4': '#86632a',
+    'color4hl': '#fadfb2',
+    'color4light': '#f8e2be',
+    'color4dk': '#5e5443',
 # # white
 #     'color0': '#F5FFF5',
 # # blue  #42acec
@@ -58,27 +64,25 @@ colors = {
 
 # white
     # 'love_color0': '#FFF8FD',
-    'love_color0': '#faf4e7',
+    'love_color0': '#ffffff',
 # pink  #42acec
-    'love_color1': '#dc9d12',
-    'love_color1hl': '#e6b850',
-    'love_color1dk': '#88610b',
-    'love_color1light': '#dccfb1',
+    'love_color1': '#0e021b',
+    'love_color1hl': '#c7c3dc',
+    'love_color1dk': '#010103',
+    'love_color1light': '#dedde1',
 # pink
-    'love_color1': '#dc9d12',
-    'love_color1hl': '#e6b850',
-    'love_color1dk': '#88610b',
-    'love_color1light': '#dccfb1',
+    'love_color2': '#0e021b',
+    'love_color2hl': '#c7c3dc',
+    'love_color2dk': '#010103',
+    'love_color2light': '#dedde1',
 # green
-    'love_color3': '#dc9d12',
-    # 'love_color3': '#3d293a',
-    'love_color3hl': '#e6b850',
-    'love_color3light': '#88610b',
-    'love_color3dk': '#dccfb1',
-    # 'love_color3dk': '#BA99AF',
+    'love_color3': '#0e021b',
+    'love_color3hl': '#c7c3dc',
+    'love_color3dk': '#010103',
+    'love_color3light': '#dedde1',
 
-    'love_tabmenubg': 'rgba(220,157,18, 0.4)',
-    'love_tabmenubghl': 'rgba(220,157,18, 0.6)'
+    'love_tabmenubg': 'rgba(14,2,27, 0.3)',
+    'love_tabmenubghl': 'rgba(14,2,27, 0.5)'
 }
 
 flairs_style = ''
@@ -108,12 +112,29 @@ for flair in flairs:
 
     offset += flair_size
 
+sidebar_pics = []
+i = 0
+while len(sidebar_pics) < 36:
+    sidebar_pics.append(sidebar[i])
+    i += 1
+    if i >= len(sidebar):
+        i = 0
+
+
 with open('style.css') as f:
     style = f.read()
 
 style = style.replace('/*BANNER_NAME*/', '%%' + banner + '%%')
 style = style.replace('/*LOVE_BANNER_NAME*/', '%%' + love_banner + '%%')
+style = style.replace('/*RDDTLOGO_NAME*/', '%%' + rddtlogo + '%%')
+style = style.replace('/*LOVE_RDDTLOGO_NAME*/', '%%' + rddtlogo + '%%')
+style = style.replace('/*SUBLOGO_NAME*/', '%%' + sublogo + '%%')
+style = style.replace('/*LOVE_SUBLOGO_NAME*/', '%%' + sublogo + '%%')
 style = style.replace('/*FLAIRS DATA*/', flairs_style)
 for color_name, color_value in colors.items():
     style = style.replace('/*' + color_name.upper() + '*/', color_value)
+for i, sidebar_pic in enumerate(sidebar_pics):
+    style = style.replace('/*SIDEBAR_PIC_' + str(i) + '*/', '%%' + sidebar_pic + '%%')
+style = style.replace('/*LOVE_BANNER_NAME*/', '%%' + love_banner + '%%')
+
 print(style)
