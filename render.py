@@ -1,10 +1,10 @@
 #! /usr/bin/python
 
-banner = 'banner-3-military'
-love_banner = 'banner-4-knight'
+banner = 'banner-5-parallel'
+love_banner = 'banner-5-parallel'
 
-sublogo = 'sublogo-3-awak'
-rddtlogo = 'rddtlogo-3-awak'
+sublogo = 'sublogo-4-parallel'
+rddtlogo = 'rddtlogo-4-parallel'
 
 flairs = ['sinballoon', 'eunballoon', 'sourcelogo', 'sourcemusic', 'seasonofglass', 'flowerbud', 'snowflake', 'lol', 'eunha', 'umji', 'sinb', 'yuju', 'sowon', 'yerin', 'mandurin', 'manduwon']
 flair_custom_widths = {
@@ -17,50 +17,30 @@ sidebar = ['sidebar-mar-awak' + str(i) for i in range(1, 8)]
 
 colors = {
 # white
-    'color0': '#fef9f1',
-    # 'color0': '#a5c4d7',
-# grey
-    'color1': '#2f1c0b',
-    'color1hl': '#d7ccc2',
-    'color1light': '#d7ccc2',
-    'color1dk': '#1e1207',
-# pale
-    'color2': '#d4c4a3',
-    'color2hl': '#e9dec7',
-    'color2light': '#fff3da',
-    'color2dk': '#a8a090',
+    'color0': '#edfaf9',
+# turquoise
+    'color1': '#8ceee9',
+    'color1hl': '#e1eeed',
+    'color1light': '#61bab5',
+    'color1dk': '#90c9c6',
+# turquoise
+    'color4': '#8ceee9',
+    'color4hl': '#e1eeed',
+    'color4light': '#61bab5',
+    'color4dk': '#90c9c6',
 # green
-    'color3': '#616238',
-    'color3hl': '#eef089',
-    'color3dk': '#2c2d19',
-    'color3light': '#e3e4ce',
+    'color3': '#308b68',
+    'color3hl': '#50bc93',
+    'color3dk': '#1e664a',
+    'color3light': '#a3e9ce',
 
-    'tabmenubg': 'rgba(157,186,106, 0.4)',
-    'tabmenubghl': 'rgba(119,146,72, 0.6)',
-# light brown
-    'color4': '#86632a',
-    'color4hl': '#fadfb2',
-    'color4light': '#f8e2be',
-    'color4dk': '#5e5443',
-# # white
-#     'color0': '#F5FFF5',
-# # blue  #42acec
-#     'color1': '#0099EE',
-#     'color1hl': '#48B3EE',
-#     'color1dk': '#0099EE',
-#     'color1light': '#D9E7EE',
-# # yellow
-#     'color2': '#FFDD00',
-#     'color2light': '#FFFADC',
-#     'color2dk': '#C9AE00',
-# # green
-#     'color3': '#00DDBB',
-#     'color3hl': '#3CDDC4',
-#     'color3light': '#BDDDD8',
-#     'color3dk': '#0CAD94',
-#
-#     'tabmenubg': 'rgba(12,173,148, 0.4)',
-#     'tabmenubghl': 'rgba(12,173,148, 0.6)',
+    'tabmenubg': 'rgba(118,196,191, 0.4)',
+    'tabmenubghl': 'rgba(156,238,233, 0.6)',
+# green
+    'color2': '#308b68',
+    'color2hl': '#50bc93',
+    'color2light': '#a3e9ce',
+    'color2dk': '#1e664a',
 
 # white
     # 'love_color0': '#FFF8FD',
